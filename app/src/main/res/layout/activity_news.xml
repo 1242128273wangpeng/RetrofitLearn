@@ -9,4 +9,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="learn.a2014wang.com.retrofitlearn.news.NewsActivity">
 
+    <GridView
+        android:id="@+id/gridview"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>

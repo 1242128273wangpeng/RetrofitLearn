@@ -121,7 +121,7 @@ public class NewsRetrofitService implements NewsRetrofitInterface {
     @Override
     public Observable<News> getNewsRxjava_A(@Header("apikey") String apikey) {
         Observable<News> observable = newsRetrofitInterface.getNewsRxjava_A(apikey);
-        observable.subscribeOn(Schedulers.io()).subscribeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<News>() {
+       /* observable.subscribeOn(Schedulers.io()).subscribeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<News>() {
             @Override
             public void onCompleted() {
                 System.out.println("完成");
@@ -137,7 +137,7 @@ public class NewsRetrofitService implements NewsRetrofitInterface {
                 System.out.println("news->" + news.toString());
             }
         });
-
+*/
         return observable;
     }
 
